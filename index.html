@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Juan Manuel Vila - Portafolio</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/jpg" href="images\aboutme.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./public/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  media="print" onload="this.media='all'">
+	<script async src="https://kit.fontawesome.com/0d71a20d3f.js" crossorigin="anonymous"></script>
+	<style>
+	body {
+	font-family: 'Lato', sans-serif;
+	}
+
+	.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+	}
+
+	.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	}
+
+	.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	}
+
+	.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+	}
+
+	.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	}
+
+	@media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+	}
+
+
+.elem {
+	box-shadow:2px 2px 10px 0px #000000;
+	transition: 1s ease-out;
+}
+.elem:hover{
+      transform: scale(1.1);
+	  box-shadow:2px 2px 10px 4px #000000;
+}
+.imgBorder{
+border-bottom: 6px solid #ffffff;
+border-left: 0px solid #ffffff;
+border-right: 0px solid #ffffff;
+border-top: 0px solid #ffffff;
+}
+.elem:hover .imgBorder{
+	border-bottom: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	border-right: 0px solid #ffffff;
+	border-top: 0px solid #ffffff;
+	transition:border 0.5s ease-in 0s;
+}
+
+
+	</style>
+</head>
+
+
+
+<body>
+
+
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+	<div class="w3-col s12 m12 l6 w3-black w3-container w3-center" style="height:700px">
+		<div class="w3-padding-32">
+		  <hr><h1><i>Juan Manuel Vila</i> </h1><hr>
+		</div>
+		<div class="w3-padding-24">
+			<a href="#" class="w3-button w3-black w3-block w3-hover-white w3-padding-16" style="animation: myAnim 2s cubic-bezier(0.7, 0, 0.84, 0) 0s 1 normal forwards;">Inicio</a>
+				<a href="#Proyectos_y_trabajos" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Proyectos y trabajos</a>
+				<!-- <a href="#CV" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Curriculum Vitae</a>
+			<a href="#Intereses" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Intereses Personales</a>
+			<a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16"></a>
+				<a href="#Plan" class="w3-button w3-black w3-block w3-hover-blue w3-padding-16">Plan estudio</a>
+				<a href="#DAFO" class="w3-button w3-black w3-block w3-hover-blue w3-padding-16">Dafo</a> -->
+			<a href="#" onclick="openNav()" class="w3-button w3-black w3-block w3-hover-white w3-padding-16">Contacto</a>
+										<!-- fullscreen deslizante de contacto -->
+													<div id="myNav" class="overlay">
+											  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+											<div class="overlay-content">
+													<a href="https://www.linkedin.com/in/juan-manuel-vila-9496b81a6/" target="_blank" class=" w3-button w3-white w3-padding-left w3-hover-brown w3-padding-right"><i class="fa fa-linkedin-square" style="font-size:24px"></i> LinkedIn</a>
+													<a href="mailto:512juanm@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail" target="_blank" class="w3-button w3-padding-left w3-white w3-hover-brown w3-padding-right"><i class="fa fa-envelope-open-o" style="font-size:24px"></i> 512juanm@gmail.com</a>
+													<a href="https://twitter.com/juanm512" target="_blank"  class="w3-button w3-white w3-hover-brown w3-padding-right w3-padding-left"><i class="fa fa-twitter-square" style="font-size:24px"></i> Twitter</a>
+													<a href="https://www.instagram.com/juuanmav/" target="_blank" class="w3-button w3-white w3-hover-brown w3-padding-right w3-padding-left"><i class="fa fa-instagram" style="font-size:24px"></i>  instagram</a>
+											</div>
+											</div>
+
+										<script>
+											function openNav() {
+											  document.getElementById("myNav").style.width = "100%";
+											}
+
+											function closeNav() {
+											  document.getElementById("myNav").style.width = "0%";
+											}
+										</script>
+		
+		
+		</div>
+	</div>
+	
+	
+	
+<!-- Acerca de mi -->	
+	<div class="w3-col s12 m12 l6 w3-blue-grey w3-container" style="height:700px">
+		<div class="w3-padding-32 w3-center">
+				<hr><h1>Acerca de mi</h1><hr>
+				<img src="images\holamundo.jpg" class="w3-margin w3-circle w3-card-4" alt="Person" style="height:50%;width:25%">
+			<div class="w3-centered w3-padding-large">
+				<p class="w3-large w3-opacity-min">
+				Soy un estudiante de Informatica, estoy realizando mi formación en la UNLP. Durante este proceso también me estoy
+				formando en otras actividades y desarrollando mis hobbies. Me encuentro desarrollando una plataforma web para facilitar la busqueda de profesionales y técnicos. Me gusta trabajar en equipo de forma ordenada y coordinada, respetando 
+				ideas ajenas y propias, me resulta cómodo poder tener flexibilidad horaria e independencia a la hora de realizar proyectos y poder 
+				usar mi creatividad.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!---------------------------------- Second Grid: Mis proyectos y trabajos --------------------->
+<div class="w3-row" style="background-color: rgb(171, 145, 124)">
+  <div class="w3-container" id="Proyectos_y_trabajos">
+	<div class="w3-padding-32 w3-center w3-row-padding">
+		
+		<hr><h2 class="w3-text-white">Proyectos y trabajos</h2><hr>
+
+		<br><br>
+
+		<div class="w3-col s12 m4 l3 w3-padding" style="max-height:600px;min-height:400px;">
+			<div class="w3-row w3-card-2 w3-border w3-round-large w3-border-white w3-brown elem">
+				<div class="w3-col s12 m12 l12 w3-row">
+					<a target="__blank" href="https://mercadoservice.com.ar"><img src="images\logo_cuadrado_black.png" class="draw w3-col s12 m12 l12 imgBorder w3-round-large" alt="Person"  style="float: none;display: block;margin: auto;height:100%;"></a>
+				</div>
+				<div class="w3-col s12 m12 l12">
+					<h3 class="w3-wide">Mercado Service</h3>
+				</div>
+
+				<div class="w3-col s12 m12 l12">
+					<p class="w3-medium w3-padding">Es una plataforma web para mejorar la busqueda de profesionales y técnicos</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!--<div class="w3-col s12 m4 l3 w3-padding" style="height:500px;">
+			<div class="w3-row w3-card-2 w3-round-large w3-border w3-border-white w3-brown elem">
+				<div class="w3-col s12 m12 l12 w3-row">
+					<img src="images\calendario.png" class="w3-col s12 m12 l12 imgBorder w3-round-large" alt="Person"  style="float: none;display: block;margin: auto;height:100%;">
+				</div>
+				<div class="w3-col s12 m12 l12">
+					<h3 class="w3-wide">Calendario con turnos</h3>
+				</div>
+
+				<div class="w3-col s12 m12 l12">
+					<p class="w3-medium w3-padding">Es una web para mostrar los turnos activos de un negocio que ofrece algun servicio</p>
+				</div>
+
+			</div>
+		</div>-->
+
+   </div>
+   
+   <div class="w3-padding-32 w3-center w3-row-padding">
+		<h2 class="w3-col s12 m12 l12 ">Lenguajes de los que tengo conocimiento</h2>
+		
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="HTML"><i class="fab fa-html5 w3-opacity-off w3-jumbo"></i></p>
+		</div>		
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="CSS"><i class="fab fa-css3-alt w3-opacity-off w3-jumbo"></i></p>
+		</div>
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="JavaScript"><i class="fab fa-js w3-opacity-off w3-jumbo"></i></p>
+		</div>	
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="Node-JS"><i class="fab fa-node-js w3-opacity-off w3-jumbo"></i></p>
+		</div>
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="C"><i class="fab fa-cuttlefish w3-opacity-off w3-jumbo"></i></p>
+		</div>	
+		<div class="w3-col s6 m4 l2">
+			<p class="w3-opacity w3-round-xlarge w3-black w3-padding-16 elem" title="C++"><i class="fab fa-cuttlefish w3-opacity-off w3-jumbo"><b>++</b></i></p>
+		</div>			
+   </div>
+   
+</div>
+
+
+
+
+
+
+<!-------------------- Third Grid: Desempeños academicos -------------------------------->
+<!-- <div class="w3-row" id="">
+	<div class="w3-half w3-dark-grey w3-center" style="min-height:700px">
+		
+		<div class="w3-padding-32">
+				<hr><h1></h1><hr>
+		</div>
+
+		
+	</div>
+	
+	
+	
+	
+	<div class="w3-half w3-teal w3-container w3-center" style="min-height:700px" id="">
+		<div class="w3-padding-32">
+			<hr> <h1></h1><hr>
+		</div>
+		
+		<div class="w3-padding-16">
+			<p>
+			
+			</p>
+
+		</div>
+    </div>
+ </div> -->
+
+
+
+
+
+
+
+<!-- Plan estudio y Dafo -->
+<!-- <div class="w3-row">
+	<div class="w3-half w3-brown w3-container w3-center" style="height:700px" id="Plan">
+		<div class="w3-padding-32">
+			<hr><h1>Plan estudios</h1><hr>
+		</div>
+		
+		<div class="w3-padding-16">
+
+			<p>
+			
+			</p>
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+    <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px" id="DAFO">
+		<div class="w3-padding-32">
+			<hr><h1>Dafo</h1><hr>
+		</div>
+	 
+		<div class="w3-padding-16">
+
+			<p>
+		
+			</p>
+
+
+
+
+
+		</div>
+    </div>
+</div> -->
+
+
+
+
+
+<!-- Footer-->
+<footer class="w3-container w3-black w3-padding-16" id="contacto">
+  <div class="w3-container w3-center w3-padding-16" style="float: none;display: block;margin: auto;">
+	<a href="https://www.linkedin.com/in/juan-manuel-vila-9496b81a6/" target="_blank" class=" w3-button w3-round-medium w3-white w3-margin-left w3-margin-top w3-hover-brown w3-margin-right"><i class="fa fa-linkedin-square" style="font-size:24px"></i> LinkedIn</a>
+	<a href="mailto:512juanm@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail" target="_blank" class="w3-button w3-round-medium w3-margin-left w3-margin-top w3-white w3-hover-brown w3-margin-right"><i class="fa fa-envelope-open-o" style="font-size:24px"></i> 512juanm@gmail.com</a>
+	<a href="https://twitter.com/juanm512" target="_blank"  class="w3-button w3-round-medium w3-white w3-hover-brown w3-margin-right w3-margin-left w3-margin-top"><i class="fa fa-twitter-square" style="font-size:24px"></i> Twitter</a>
+	<a href="https://www.instagram.com/juuanmav/" target="_blank" class="w3-button w3-round-medium w3-white w3-hover-brown w3-margin-right w3-margin-left w3-margin-top"><i class="fa fa-instagram" style="font-size:24px"></i>  instagram</a>
+  </div>
+</footer> 
+
+</body>
+</html>
